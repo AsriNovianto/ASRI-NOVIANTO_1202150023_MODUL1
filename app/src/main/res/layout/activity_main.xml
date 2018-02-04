@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.studycase1.MainActivity">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="37dp"
+        android:layout_marginTop="48dp"
+        android:layout_toStartOf="@+id/upnormal"
+        android:text="Makan Malam"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055" />
+    //Pada textView diatas digunakan untuk label "Makan Malam"
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/textView10"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/eatbus"
+        android:text="dengan milea"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="54dp" />
+    //pada textView diatas digunakan untuk labe "dengan Milea"
+
+    <EditText
+        android:id="@+id/edit_menu"
+        android:layout_width="313dp"
+        android:layout_height="58dp"
+        android:layout_above="@+id/edit_porsi"
+        android:layout_alignStart="@+id/edit_porsi"
+        android:layout_marginBottom="42dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="menu"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="149dp" />
+    //Pada editText diatas,digunakan untuk menulis menu makanan dimana edit text diberinama "edit_menu"
+    //untuk mengarahkan ke activity 2
+
+    <EditText
+        android:id="@+id/edit_porsi"
+        android:layout_width="309dp"
+        android:layout_height="46dp"
+        android:layout_above="@+id/upnormal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="79dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="porsi"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="232dp" />
+    //Pada editText diatas,digunakan untuk menulis menu makanan dimana edit text diberinama "edit_Porsi"
+    //untuk mengarahkan ke activity 2
+
+
+    <Button
+        android:id="@+id/eatbus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/upnormal"
+        android:layout_alignBottom="@+id/upnormal"
+        android:layout_alignStart="@+id/edit_porsi"
+        android:onClick="eatbus"
+        android:background="#ff8ea3"
+        android:text="EatBus"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="400dp" />
+    //pada Button diatas akan mengarahkan ke tempat makan Eatbus
+
+    <Button
+        android:id="@+id/upnormal"
+        android:layout_width="wrap_content"
+        android:onClick="upnormal"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="95dp"
+        android:layout_marginEnd="17dp"
+        android:background="#ff8ea3"
+        android:text="UpNormal"
+        tools:layout_editor_absoluteX="246dp"
+        tools:layout_editor_absoluteY="399dp" />
+    //pada Button diatas akan mengarahkan ke tempat makan Upnormal
+
+</RelativeLayout>
